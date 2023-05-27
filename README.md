@@ -128,7 +128,7 @@ example request for save  metadata:
 - socket chat;
 
 ###
-node v.14
+node v.18
 ### use libs:
 
 - mongodb;
