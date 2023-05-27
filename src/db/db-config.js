@@ -8,12 +8,7 @@ const createUrl = () => {
     return `mongodb+srv://${user}:${pass}${urlEnd}`;
 }
 
-const db = mongoose.connect(createUrl(), {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-});
+const db = mongoose.connect(createUrl());
 
 mongoose.connection.on('error', (e) => {
     console.log('Mongoose connection error!')
